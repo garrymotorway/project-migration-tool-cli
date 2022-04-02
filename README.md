@@ -19,12 +19,14 @@ npm i -g project-migration-tool-cli
 
 ## To run
 
+```sh
 promig \
     --config ./file.json \
     --source-token 123 \
     --destination-token 456 \
     --default-assignee garry@motorway.com \
     --destination-seed 100
+```
 
 * `--config` a file with your configuration (see [project-migration-tool README](https://github.com/garrymotorway/project-migration-tool) for an example of what this should look like).
 * `--source-token` required to authenticate against the source system.
