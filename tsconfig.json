@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2021",
+    "lib": [
+      "ES2021"
+    ],
+    "esModuleInterop": true,
+    "strict": true,
+    "outDir": "dist",
+    "baseUrl": "./src",
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/*.mts",
+    "./**/*.js",
+    "./**/*.mjs",
+    "test/setupTests"
+  ],
+  "exclude": [
+    "node_modules",
+    "./app"
+  ]
+}

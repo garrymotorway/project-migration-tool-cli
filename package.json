@@ -1,0 +1,45 @@
+{
+  "name": "project-migration-tool-cli",
+  "version": "1.0.0",
+  "description": "CLI for the project migration tool",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garrymotorway/project-migration-tool-cli.git"
+  },
+  "bin": {
+    "promig": "./app"
+  },
+  "homepage": "https://github.com/garrymotorway/project-migration-tool-cli#readme",
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig-build.json",
+    "test": "echo \"Error: no test specified in project-migration-tool-cli\"",
+    "lint": "eslint .",
+    "start": "node ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garrymotorway/project-migration-tool-cli/issues"
+  },
+  "dependencies": {
+    "commander": "^9.1.0",
+    "project-migration-tool": "github:garrymotorway/project-migration-tool"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^16.1.4",
+    "eslint-import-resolver-typescript": "^2.7.0",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  },
+  "engines": {
+    "node": "^16.1.4"
+  }
+}
