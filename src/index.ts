@@ -17,7 +17,9 @@ process.env.CONSUMER_TOKEN = options.sourceToken;
 process.env.PRODUCER_TOKEN = options.destinationToken;
 process.env.DEFAULT_REPORTER = options.defaultAssignee;
 process.env.DEST_SEED = options.destinationSeed;
-process.env.SAMPLE = options.sample;
+if (options.sample) {
+  process.env.SAMPLE = options.sample;
+}
 
 if (!existsSync(options.config)) {
   throw new Error(`The file '${options.config}' does not exist. Exiting...`);
