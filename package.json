@@ -26,7 +26,8 @@
   },
   "dependencies": {
     "commander": "^9.1.0",
-    "project-migration-tool": "github:garrymotorway/project-migration-tool"
+    "project-migration-tool": "github:garrymotorway/project-migration-tool",
+    "typescript": "^4.6.3"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
@@ -38,8 +39,7 @@
     "eslint-import-resolver-typescript": "^2.7.0",
     "eslint-plugin-import": "^2.25.4",
     "jest": "^27.5.1",
-    "ts-jest": "^27.1.4",
-    "typescript": "^4.6.3"
+    "ts-jest": "^27.1.4"
   },
   "engines": {
     "node": "^16.1.4"
