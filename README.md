@@ -14,7 +14,7 @@ This is CLI wrapper around the project migration tool core library to allow func
 ## To install
 
 ```
-npm i -g project-migration-tool-cli
+npm i -g promig@https://github.com/garrymotorway/project-migration-tool-cli.git
 ```
 
 ## To run
