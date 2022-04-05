@@ -16,7 +16,8 @@
     "test": "echo \"Error: no test specified in project-migration-tool-cli\"",
     "lint": "eslint .",
     "start": "node ./dist/index.js",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "package": "npm i && npm run build && npm pack"
   },
   "author": "",
   "license": "ISC",
