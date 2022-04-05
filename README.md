@@ -29,7 +29,10 @@ promig \
 ```
 
 * `--config` a file with your configuration (see [project-migration-tool README](https://github.com/garrymotorway/project-migration-tool) for an example of what this should look like).
-* `--source-token` required to authenticate against the source system.
+* `--source-token` required to authenticate against the source system. For JIRA you need to generate an API key and base64 it, like this
+    ```bash
+    echo -n 'garry@motorway.co.uk:mykey' | base64
+    ```
 * `--destination-token` required to authenticate against the destination system (JIRA, for example, doesn't need this as we output a file to upload, so this could be made option in future).
 * `--default-assignee` a default assignee for issues where users from the source system don't exist in the destination system.
 * `--destination-seed` if your destination project already has issues, set this higher than the highest issue number to avoid ID clashes.
