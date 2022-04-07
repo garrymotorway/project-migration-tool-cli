@@ -17,6 +17,14 @@ This is CLI wrapper around the project migration tool core library to allow func
 npm i -g promig@https://github.com/garrymotorway/project-migration-tool-cli.git
 ```
 
+I had issues with this; the node_modules didn't install for the client (possibly because it's coming from GIT). You can also do this:
+
+```
+git clone https://github.com/garrymotorway/project-migration-tool-cli.git project-migration-tool-cli-tmp && npm --prefix ./project-migration-tool-cli-tmp i && npm --prefix ./project-migration-tool-cli-tmp run build && npm i -g promig@./project-migration-tool-cli-tmp
+```
+
+...but this requires a bit of manual tidy-up after to remove the tool.
+
 ## To run
 
 ```sh

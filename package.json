@@ -17,8 +17,7 @@
     "lint": "eslint .",
     "start": "node ./dist/index.js",
     "prepare": "npm run build",
-    "package": "npm i && npm run build && npm pack",
-    "preinstall": "npm i typescript@^4.6.3 && npm i @types/node"
+    "package": "npm i && npm run build && npm pack"
   },
   "author": "",
   "license": "ISC",
