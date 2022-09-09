@@ -4,7 +4,7 @@
 
 This is CLI wrapper around the project migration tool core library to allow functionality to be accessed via the CLI rather than code.
 
-## Pre-reqs (assuming Shortcut to JIRA migration)
+## Pre-requisites (assuming Shortcut to JIRA migration)
 
 * Must have a target project setup in JIRA
 * Must have a board setup in JIRA (the ID in the url is the rapid view ID). In JIRA this is achieved as follows (if it doesn't exist already)
